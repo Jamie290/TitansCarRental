@@ -1,7 +1,7 @@
 ﻿
 namespace TitansCarRental
 {
-    partial class Form2
+    partial class Menu
     {
         /// <summary>
         /// Required designer variable.
@@ -34,6 +34,7 @@ namespace TitansCarRental
             this.Booking = new System.Windows.Forms.Button();
             this.Vehicle = new System.Windows.Forms.Button();
             this.Motorcycles = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -57,6 +58,7 @@ namespace TitansCarRental
             this.Customers.TabIndex = 2;
             this.Customers.Text = "Customers";
             this.Customers.UseVisualStyleBackColor = false;
+            this.Customers.Click += new System.EventHandler(this.Customers_Click);
             // 
             // Booking
             // 
@@ -68,6 +70,7 @@ namespace TitansCarRental
             this.Booking.TabIndex = 3;
             this.Booking.Text = "Booking";
             this.Booking.UseVisualStyleBackColor = false;
+            this.Booking.Click += new System.EventHandler(this.Booking_Click);
             // 
             // Vehicle
             // 
@@ -79,6 +82,7 @@ namespace TitansCarRental
             this.Vehicle.TabIndex = 4;
             this.Vehicle.Text = "Vehicle";
             this.Vehicle.UseVisualStyleBackColor = false;
+            this.Vehicle.Click += new System.EventHandler(this.Vehicle_Click);
             // 
             // Motorcycles
             // 
@@ -90,23 +94,37 @@ namespace TitansCarRental
             this.Motorcycles.TabIndex = 5;
             this.Motorcycles.Text = "Motorcycle";
             this.Motorcycles.UseVisualStyleBackColor = false;
+            this.Motorcycles.Click += new System.EventHandler(this.Motorcycles_Click);
             // 
-            // Form2
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Bauhaus 93", 28.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.Color.Gray;
+            this.label1.Location = new System.Drawing.Point(464, 50);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(397, 84);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Car Rental";
+            // 
+            // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1309, 450);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.Motorcycles);
             this.Controls.Add(this.Vehicle);
             this.Controls.Add(this.Booking);
             this.Controls.Add(this.Customers);
             this.Controls.Add(this.pictureBox1);
             this.ForeColor = System.Drawing.Color.White;
-            this.Name = "Form2";
-            this.Text = "Form2";
+            this.Name = "Menu";
+            this.Text = "Menu";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -117,5 +135,6 @@ namespace TitansCarRental
         private System.Windows.Forms.Button Booking;
         private System.Windows.Forms.Button Vehicle;
         private System.Windows.Forms.Button Motorcycles;
+        private System.Windows.Forms.Label label1;
     }
 }

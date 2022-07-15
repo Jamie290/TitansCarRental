@@ -8,9 +8,9 @@ using System.Windows.Forms;
 
 namespace TitansCarRental
 {
-    public partial class Form2 : Form
+    public partial class Motorcycle : Form
     {
-        public Form2()
+        public Motorcycle()
         {
             InitializeComponent();
         }

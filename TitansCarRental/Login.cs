@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace TitansCarRental
 {
-    public partial class Form1 : Form
+    public partial class Login : Form
     {
-        public Form1()
+        public Login()
         {
             InitializeComponent();
         }
@@ -44,7 +44,7 @@ namespace TitansCarRental
         {
             if (txtUserName.Text=="User" && txtPassword.Text=="2022")
             {
-                new Form2().Show();
+                new Menu().Show();
                 this.Hide();
             }
 
