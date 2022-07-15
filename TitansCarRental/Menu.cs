@@ -38,5 +38,10 @@ namespace TitansCarRental
             var myForm = new Motorcycle();
             myForm.Show();
         }
+
+        private void Menu_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

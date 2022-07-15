@@ -10,6 +10,8 @@ namespace TitansCarRental
 {
     public partial class Customers : Form
     {
+        public List<Customer> allmycustomers = new List<Customer>();
+
         public Customers()
         {
             InitializeComponent();
@@ -22,12 +24,25 @@ namespace TitansCarRental
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            Customer c = Customer();
-            c.
+            Customer c = new Customer();
+            c.Name = txtName.Text;
+            c.Email = txtEmail.Text;
+            allmycustomers.Add(c);
+            RefreshForm();
         }
-        class Customer
+        private void RefreshForm()
         {
-            public string namer { get; set; }
+            listBox1.Items.Clear();
+            foreach(Customer c in allmycustomers)
+            {
+                listBox1.Items.Add(c.Name + " " + c.Email);
+            }
         }
+       
     }
+    public class Customer
+        {
+            public string Name { get; set; }
+            public string Email { get; set; }
+        }
 }
