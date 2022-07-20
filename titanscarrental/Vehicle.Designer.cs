@@ -50,7 +50,8 @@ namespace TitansCarRental
             this.button2 = new System.Windows.Forms.Button();
             this.btnBook = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // label6
@@ -255,14 +256,16 @@ namespace TitansCarRental
             this.btnUpdate.UseVisualStyleBackColor = false;
             this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
-            // listBox1
+            // dataGridView1
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 32;
-            this.listBox1.Location = new System.Drawing.Point(35, 407);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(1170, 388);
-            this.listBox1.TabIndex = 18;
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(12, 381);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 82;
+            this.dataGridView1.RowTemplate.Height = 41;
+            this.dataGridView1.Size = new System.Drawing.Size(1193, 441);
+            this.dataGridView1.TabIndex = 18;
             // 
             // Vehicle
             // 
@@ -270,7 +273,7 @@ namespace TitansCarRental
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gray;
             this.ClientSize = new System.Drawing.Size(1217, 834);
-            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.btnBook);
             this.Controls.Add(this.btnUpdate);
@@ -295,6 +298,7 @@ namespace TitansCarRental
             this.ForeColor = System.Drawing.Color.Black;
             this.Name = "Vehicle";
             this.Text = "Motorcycles";
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -323,6 +327,6 @@ namespace TitansCarRental
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button btnBook;
         private System.Windows.Forms.Button btnUpdate;
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }

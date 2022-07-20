@@ -30,7 +30,6 @@ namespace TitansCarRental
         private void InitializeComponent()
         {
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
@@ -58,13 +57,6 @@ namespace TitansCarRental
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(241, 39);
             this.textBox1.TabIndex = 0;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(60, 186);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(241, 39);
-            this.textBox2.TabIndex = 0;
             // 
             // textBox3
             // 
@@ -246,10 +238,10 @@ namespace TitansCarRental
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(471, 108);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboBox1.Location = new System.Drawing.Point(60, 186);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(235, 40);
+            this.comboBox1.Size = new System.Drawing.Size(241, 40);
             this.comboBox1.TabIndex = 6;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
@@ -275,7 +267,6 @@ namespace TitansCarRental
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.textBox6);
             this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox7);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.textBox3);
@@ -291,7 +282,6 @@ namespace TitansCarRental
         #endregion
 
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox5;
