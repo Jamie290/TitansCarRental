@@ -38,12 +38,44 @@ namespace TitansCarRental
 
         private void btnBook_Click(object sender, EventArgs e)
         {
+            CVehicle v = new CVehicle();
+            v.ID = int.Parse(txtID.Text);
+            v.Make = txtMake.Text;
+            v.Miles = txtMiles.Text;
+            v.Model = txtModel.Text;
+            v.Fuel = txtFuel.Text;
+            v.Rates = txtrates.Text;
+            v.Year = txtYear.Text;
+            v.Transmission = txtTrans.Text;
+            v.Type = txtType.Text;
+            Program.VehicleList.Add(v);
+            RefreshForm();
 
+        }
+
+        private void RefreshForm()
+        {
+            listBox1.Items.Clear();
+            foreach (CVehicle v in Program.VehicleList)
+            {
+                listBox1.Items.Add(v.ID + "      " + v.Type + "      " + v.Make + "     " + v.Model + "      " + v.Miles + "      " + v.Transmission + "     " + v.Year + "     " + v.Rates + "     " + v.Fuel);
+            }
         }
     }
 
     public class CVehicle
     {
-        public string Name { get; set; }
+        public int ID { get; set; }
+        public string Make { get; set; }
+        public string Model { get; set; }
+        public string Rates { get; set; }
+
+        public string Transmission { get; set; }
+        public string Fuel { get; set; }
+        public string Type { get; set; }
+        public string Year { get; set; }
+        public string Miles { get; set; }
+
+
     }
 }
