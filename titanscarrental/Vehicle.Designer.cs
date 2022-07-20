@@ -35,23 +35,22 @@ namespace TitansCarRental
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.txtMiles = new System.Windows.Forms.TextBox();
+            this.txtYear = new System.Windows.Forms.TextBox();
+            this.txtType = new System.Windows.Forms.TextBox();
+            this.txtTrans = new System.Windows.Forms.TextBox();
+            this.txtFuel = new System.Windows.Forms.TextBox();
+            this.txtID = new System.Windows.Forms.TextBox();
+            this.txtrates = new System.Windows.Forms.TextBox();
+            this.txtMake = new System.Windows.Forms.TextBox();
+            this.txtModel = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.btnBook = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.listBox1 = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // label6
@@ -106,9 +105,9 @@ namespace TitansCarRental
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(51, 26);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(40, 32);
+            this.label2.Size = new System.Drawing.Size(127, 32);
             this.label2.TabIndex = 13;
-            this.label2.Text = "ID";
+            this.label2.Text = "Vehicle ID";
             // 
             // label1
             // 
@@ -121,68 +120,68 @@ namespace TitansCarRental
             this.label1.TabIndex = 14;
             this.label1.Text = "Vehicle type";
             // 
-            // textBox6
+            // txtMiles
             // 
-            this.textBox6.Location = new System.Drawing.Point(604, 320);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(241, 39);
-            this.textBox6.TabIndex = 3;
+            this.txtMiles.Location = new System.Drawing.Point(604, 320);
+            this.txtMiles.Name = "txtMiles";
+            this.txtMiles.Size = new System.Drawing.Size(241, 39);
+            this.txtMiles.TabIndex = 3;
             // 
-            // textBox4
+            // txtYear
             // 
-            this.textBox4.Location = new System.Drawing.Point(317, 320);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(241, 39);
-            this.textBox4.TabIndex = 4;
+            this.txtYear.Location = new System.Drawing.Point(317, 320);
+            this.txtYear.Name = "txtYear";
+            this.txtYear.Size = new System.Drawing.Size(241, 39);
+            this.txtYear.TabIndex = 4;
             // 
-            // textBox2
+            // txtType
             // 
-            this.textBox2.Location = new System.Drawing.Point(51, 320);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(241, 39);
-            this.textBox2.TabIndex = 5;
+            this.txtType.Location = new System.Drawing.Point(51, 320);
+            this.txtType.Name = "txtType";
+            this.txtType.Size = new System.Drawing.Size(241, 39);
+            this.txtType.TabIndex = 5;
             // 
-            // textBox5
+            // txtTrans
             // 
-            this.textBox5.Location = new System.Drawing.Point(604, 70);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(241, 39);
-            this.textBox5.TabIndex = 6;
+            this.txtTrans.Location = new System.Drawing.Point(604, 70);
+            this.txtTrans.Name = "txtTrans";
+            this.txtTrans.Size = new System.Drawing.Size(241, 39);
+            this.txtTrans.TabIndex = 6;
             // 
-            // textBox3
+            // txtFuel
             // 
-            this.textBox3.Location = new System.Drawing.Point(317, 70);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(241, 39);
-            this.textBox3.TabIndex = 7;
+            this.txtFuel.Location = new System.Drawing.Point(317, 70);
+            this.txtFuel.Name = "txtFuel";
+            this.txtFuel.Size = new System.Drawing.Size(241, 39);
+            this.txtFuel.TabIndex = 7;
             // 
-            // textBox1
+            // txtID
             // 
-            this.textBox1.Location = new System.Drawing.Point(51, 70);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(241, 39);
-            this.textBox1.TabIndex = 8;
+            this.txtID.Location = new System.Drawing.Point(51, 70);
+            this.txtID.Name = "txtID";
+            this.txtID.Size = new System.Drawing.Size(241, 39);
+            this.txtID.TabIndex = 8;
             // 
-            // textBox7
+            // txtrates
             // 
-            this.textBox7.Location = new System.Drawing.Point(51, 198);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(241, 39);
-            this.textBox7.TabIndex = 5;
+            this.txtrates.Location = new System.Drawing.Point(51, 198);
+            this.txtrates.Name = "txtrates";
+            this.txtrates.Size = new System.Drawing.Size(241, 39);
+            this.txtrates.TabIndex = 5;
             // 
-            // textBox8
+            // txtMake
             // 
-            this.textBox8.Location = new System.Drawing.Point(317, 198);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(241, 39);
-            this.textBox8.TabIndex = 4;
+            this.txtMake.Location = new System.Drawing.Point(317, 198);
+            this.txtMake.Name = "txtMake";
+            this.txtMake.Size = new System.Drawing.Size(241, 39);
+            this.txtMake.TabIndex = 4;
             // 
-            // textBox9
+            // txtModel
             // 
-            this.textBox9.Location = new System.Drawing.Point(604, 198);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(241, 39);
-            this.textBox9.TabIndex = 3;
+            this.txtModel.Location = new System.Drawing.Point(604, 198);
+            this.txtModel.Name = "txtModel";
+            this.txtModel.Size = new System.Drawing.Size(241, 39);
+            this.txtModel.TabIndex = 3;
             // 
             // label7
             // 
@@ -256,16 +255,15 @@ namespace TitansCarRental
             this.btnUpdate.UseVisualStyleBackColor = false;
             this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
-            // dataGridView1
+            // listBox1
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 381);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 82;
-            this.dataGridView1.RowTemplate.Height = 41;
-            this.dataGridView1.Size = new System.Drawing.Size(1193, 441);
-            this.dataGridView1.TabIndex = 18;
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.ItemHeight = 32;
+            this.listBox1.Location = new System.Drawing.Point(20, 406);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(1175, 388);
+            this.listBox1.TabIndex = 18;
+            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // Vehicle
             // 
@@ -273,7 +271,7 @@ namespace TitansCarRental
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gray;
             this.ClientSize = new System.Drawing.Size(1217, 834);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.listBox1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.btnBook);
             this.Controls.Add(this.btnUpdate);
@@ -286,19 +284,18 @@ namespace TitansCarRental
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox9);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtModel);
+            this.Controls.Add(this.txtMiles);
+            this.Controls.Add(this.txtMake);
+            this.Controls.Add(this.txtYear);
+            this.Controls.Add(this.txtrates);
+            this.Controls.Add(this.txtType);
+            this.Controls.Add(this.txtTrans);
+            this.Controls.Add(this.txtFuel);
+            this.Controls.Add(this.txtID);
             this.ForeColor = System.Drawing.Color.Black;
             this.Name = "Vehicle";
             this.Text = "Motorcycles";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -312,21 +309,21 @@ namespace TitansCarRental
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox txtMiles;
+        private System.Windows.Forms.TextBox txtYear;
+        private System.Windows.Forms.TextBox txtType;
+        private System.Windows.Forms.TextBox txtTrans;
+        private System.Windows.Forms.TextBox txtFuel;
+        private System.Windows.Forms.TextBox txtID;
+        private System.Windows.Forms.TextBox txtrates;
+        private System.Windows.Forms.TextBox txtMake;
+        private System.Windows.Forms.TextBox txtModel;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button btnBook;
         private System.Windows.Forms.Button btnUpdate;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.ListBox listBox1;
     }
 }
