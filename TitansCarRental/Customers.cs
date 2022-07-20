@@ -34,7 +34,7 @@ namespace TitansCarRental
         }
         private void RefreshForm()
         {
-            //glistBox1.Items.Clear();
+            listBox1.Items.Clear();
             foreach(Customer c in Program.allmycustomers)
             {
                 listBox1.Items.Add(c.ID +"      " + c.Name + "      " + c.Email + "     " + c.Phone);

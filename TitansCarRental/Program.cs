@@ -10,6 +10,8 @@ namespace TitansCarRental
     {
         static public List<Customer> allmycustomers = new List<Customer>();
         static public List<CVehicle> VehicleList = new List<CVehicle>();
+        static public List<CMotorcycle> MotorcycleList = new List<CMotorcycle>();
+        static public List<Booking> allbookings = new List<Booking>();
         /// <summary>
         ///  The main entry point for the application.
         /// </summary>

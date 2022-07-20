@@ -29,18 +29,13 @@ namespace TitansCarRental
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.txtWeeks = new System.Windows.Forms.TextBox();
+            this.txtDays = new System.Windows.Forms.TextBox();
+            this.txtStatus = new System.Windows.Forms.TextBox();
+            this.DateTime = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -48,57 +43,37 @@ namespace TitansCarRental
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.listBox1 = new System.Windows.Forms.ListBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.BoxName = new System.Windows.Forms.ComboBox();
+            this.BoxID = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
-            // textBox1
+            // txtWeeks
             // 
-            this.textBox1.Location = new System.Drawing.Point(60, 61);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(241, 39);
-            this.textBox1.TabIndex = 0;
+            this.txtWeeks.Location = new System.Drawing.Point(326, 61);
+            this.txtWeeks.Name = "txtWeeks";
+            this.txtWeeks.Size = new System.Drawing.Size(241, 39);
+            this.txtWeeks.TabIndex = 0;
             // 
-            // textBox3
+            // txtDays
             // 
-            this.textBox3.Location = new System.Drawing.Point(326, 61);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(241, 39);
-            this.textBox3.TabIndex = 0;
+            this.txtDays.Location = new System.Drawing.Point(614, 61);
+            this.txtDays.Name = "txtDays";
+            this.txtDays.Size = new System.Drawing.Size(241, 39);
+            this.txtDays.TabIndex = 0;
             // 
-            // textBox4
+            // txtStatus
             // 
-            this.textBox4.Location = new System.Drawing.Point(326, 186);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(241, 39);
-            this.textBox4.TabIndex = 0;
+            this.txtStatus.Location = new System.Drawing.Point(326, 186);
+            this.txtStatus.Name = "txtStatus";
+            this.txtStatus.Size = new System.Drawing.Size(246, 39);
+            this.txtStatus.TabIndex = 0;
             // 
-            // textBox5
+            // DateTime
             // 
-            this.textBox5.Location = new System.Drawing.Point(614, 61);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(241, 39);
-            this.textBox5.TabIndex = 0;
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(614, 186);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(241, 39);
-            this.textBox6.TabIndex = 0;
-            // 
-            // textBox7
-            // 
-            this.textBox7.Location = new System.Drawing.Point(927, 61);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(246, 39);
-            this.textBox7.TabIndex = 0;
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(927, 186);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(246, 39);
-            this.dateTimePicker1.TabIndex = 1;
+            this.DateTime.Location = new System.Drawing.Point(614, 187);
+            this.DateTime.Name = "DateTime";
+            this.DateTime.Size = new System.Drawing.Size(246, 39);
+            this.DateTime.TabIndex = 1;
             // 
             // label1
             // 
@@ -118,20 +93,9 @@ namespace TitansCarRental
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(60, 18);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(40, 32);
+            this.label2.Size = new System.Drawing.Size(127, 32);
             this.label2.TabIndex = 2;
-            this.label2.Text = "ID";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(326, 140);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(193, 32);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Customer email";
+            this.label2.Text = "Vehicle ID";
             // 
             // label4
             // 
@@ -144,17 +108,6 @@ namespace TitansCarRental
             this.label4.TabIndex = 2;
             this.label4.Text = "Booked weeks";
             this.label4.Click += new System.EventHandler(this.label4_Click);
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(614, 140);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(245, 32);
-            this.label5.TabIndex = 2;
-            this.label5.Text = "Customer telephone";
             // 
             // label6
             // 
@@ -172,7 +125,7 @@ namespace TitansCarRental
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(927, 140);
+            this.label7.Location = new System.Drawing.Point(614, 141);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(157, 32);
             this.label7.TabIndex = 2;
@@ -183,7 +136,7 @@ namespace TitansCarRental
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(927, 18);
+            this.label8.Location = new System.Drawing.Point(326, 143);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(184, 32);
             this.label8.TabIndex = 2;
@@ -194,7 +147,7 @@ namespace TitansCarRental
             this.button1.BackColor = System.Drawing.Color.Gray;
             this.button1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(1232, 119);
+            this.button1.Location = new System.Drawing.Point(974, 117);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(150, 46);
             this.button1.TabIndex = 4;
@@ -206,19 +159,20 @@ namespace TitansCarRental
             this.button2.BackColor = System.Drawing.Color.Gray;
             this.button2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(1232, 55);
+            this.button2.Location = new System.Drawing.Point(974, 53);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(150, 46);
             this.button2.TabIndex = 4;
             this.button2.Text = "Delete";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.Gray;
             this.button3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(1232, 183);
+            this.button3.Location = new System.Drawing.Point(974, 181);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(150, 46);
             this.button3.TabIndex = 4;
@@ -232,18 +186,29 @@ namespace TitansCarRental
             this.listBox1.ItemHeight = 32;
             this.listBox1.Location = new System.Drawing.Point(14, 259);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(1374, 516);
+            this.listBox1.Size = new System.Drawing.Size(1195, 516);
             this.listBox1.TabIndex = 5;
+            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
-            // comboBox1
+            // BoxName
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(60, 186);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(241, 40);
-            this.comboBox1.TabIndex = 6;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.BoxName.FormattingEnabled = true;
+            this.BoxName.Location = new System.Drawing.Point(60, 186);
+            this.BoxName.Margin = new System.Windows.Forms.Padding(4);
+            this.BoxName.Name = "BoxName";
+            this.BoxName.Size = new System.Drawing.Size(241, 40);
+            this.BoxName.TabIndex = 6;
+            this.BoxName.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // BoxID
+            // 
+            this.BoxID.FormattingEnabled = true;
+            this.BoxID.Location = new System.Drawing.Point(60, 61);
+            this.BoxID.Margin = new System.Windows.Forms.Padding(4);
+            this.BoxID.Name = "BoxID";
+            this.BoxID.Size = new System.Drawing.Size(241, 40);
+            this.BoxID.TabIndex = 6;
+            this.BoxID.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // Bookings
             // 
@@ -251,7 +216,8 @@ namespace TitansCarRental
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gray;
             this.ClientSize = new System.Drawing.Size(1414, 794);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.BoxID);
+            this.Controls.Add(this.BoxName);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button3);
@@ -259,18 +225,13 @@ namespace TitansCarRental
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.DateTime);
+            this.Controls.Add(this.txtStatus);
+            this.Controls.Add(this.txtDays);
+            this.Controls.Add(this.txtWeeks);
             this.Name = "Bookings";
             this.Text = "Bookings";
             this.Load += new System.EventHandler(this.Bookings_Load);
@@ -280,19 +241,13 @@ namespace TitansCarRental
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.TextBox txtWeeks;
+        private System.Windows.Forms.TextBox txtDays;
+        private System.Windows.Forms.TextBox txtStatus;
+        private System.Windows.Forms.DateTimePicker DateTime;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
@@ -300,6 +255,7 @@ namespace TitansCarRental
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox BoxName;
+        private System.Windows.Forms.ComboBox BoxID;
     }
 }

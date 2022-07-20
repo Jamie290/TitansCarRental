@@ -105,9 +105,9 @@ namespace TitansCarRental
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(51, 26);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(40, 32);
+            this.label2.Size = new System.Drawing.Size(127, 32);
             this.label2.TabIndex = 13;
-            this.label2.Text = "ID";
+            this.label2.Text = "Vehicle ID";
             // 
             // label1
             // 
