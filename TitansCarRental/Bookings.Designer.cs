@@ -49,60 +49,61 @@ namespace TitansCarRental
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.listBox1 = new System.Windows.Forms.ListBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(60, 62);
+            this.textBox1.Location = new System.Drawing.Point(60, 61);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(241, 39);
             this.textBox1.TabIndex = 0;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(60, 185);
+            this.textBox2.Location = new System.Drawing.Point(60, 186);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(241, 39);
             this.textBox2.TabIndex = 0;
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(326, 62);
+            this.textBox3.Location = new System.Drawing.Point(326, 61);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(241, 39);
             this.textBox3.TabIndex = 0;
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(326, 185);
+            this.textBox4.Location = new System.Drawing.Point(326, 186);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(241, 39);
             this.textBox4.TabIndex = 0;
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(613, 62);
+            this.textBox5.Location = new System.Drawing.Point(614, 61);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(241, 39);
             this.textBox5.TabIndex = 0;
             // 
             // textBox6
             // 
-            this.textBox6.Location = new System.Drawing.Point(613, 185);
+            this.textBox6.Location = new System.Drawing.Point(614, 186);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(241, 39);
             this.textBox6.TabIndex = 0;
             // 
             // textBox7
             // 
-            this.textBox7.Location = new System.Drawing.Point(927, 62);
+            this.textBox7.Location = new System.Drawing.Point(927, 61);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(246, 39);
             this.textBox7.TabIndex = 0;
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(927, 185);
+            this.dateTimePicker1.Location = new System.Drawing.Point(927, 186);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(246, 39);
             this.dateTimePicker1.TabIndex = 1;
@@ -157,7 +158,7 @@ namespace TitansCarRental
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(613, 140);
+            this.label5.Location = new System.Drawing.Point(614, 140);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(245, 32);
             this.label5.TabIndex = 2;
@@ -168,7 +169,7 @@ namespace TitansCarRental
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(613, 18);
+            this.label6.Location = new System.Drawing.Point(614, 18);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(162, 32);
             this.label6.TabIndex = 2;
@@ -201,7 +202,7 @@ namespace TitansCarRental
             this.button1.BackColor = System.Drawing.Color.Gray;
             this.button1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(1233, 119);
+            this.button1.Location = new System.Drawing.Point(1232, 119);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(150, 46);
             this.button1.TabIndex = 4;
@@ -213,7 +214,7 @@ namespace TitansCarRental
             this.button2.BackColor = System.Drawing.Color.Gray;
             this.button2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(1233, 55);
+            this.button2.Location = new System.Drawing.Point(1232, 55);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(150, 46);
             this.button2.TabIndex = 4;
@@ -225,7 +226,7 @@ namespace TitansCarRental
             this.button3.BackColor = System.Drawing.Color.Gray;
             this.button3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(1233, 183);
+            this.button3.Location = new System.Drawing.Point(1232, 183);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(150, 46);
             this.button3.TabIndex = 4;
@@ -242,12 +243,23 @@ namespace TitansCarRental
             this.listBox1.Size = new System.Drawing.Size(1374, 516);
             this.listBox1.TabIndex = 5;
             // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(471, 108);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(235, 40);
+            this.comboBox1.TabIndex = 6;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
             // Bookings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gray;
-            this.ClientSize = new System.Drawing.Size(1415, 794);
+            this.ClientSize = new System.Drawing.Size(1414, 794);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button3);
@@ -270,6 +282,7 @@ namespace TitansCarRental
             this.Controls.Add(this.textBox1);
             this.Name = "Bookings";
             this.Text = "Bookings";
+            this.Load += new System.EventHandler(this.Bookings_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -297,5 +310,6 @@ namespace TitansCarRental
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }

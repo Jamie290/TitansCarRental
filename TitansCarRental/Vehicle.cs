@@ -1,4 +1,4 @@
-﻿using FormTitansCarRental.Models;
+﻿//using FormTitansCarRental.Models;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -15,7 +15,7 @@ namespace TitansCarRental
     public partial class Vehicle : Form
     {
         private readonly string _rootDir = Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.FullName + "\\";
-        private List<Vehicle> VehicleList;
+       
         public Vehicle()
         {
             InitializeComponent();
@@ -40,5 +40,10 @@ namespace TitansCarRental
         {
 
         }
+    }
+
+    public class CVehicle
+    {
+        public string Name { get; set; }
     }
 }

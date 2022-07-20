@@ -24,5 +24,23 @@ namespace TitansCarRental
         {
 
         }
+
+        private void Bookings_Load(object sender, EventArgs e)
+        {
+            foreach(Customer c in Program.allmycustomers)
+            {
+                comboBox1.Items.Add(c.Name);
+            }
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+    }
+    public class Booking
+    {
+        DateTime startdate;
+        int days;
     }
 }

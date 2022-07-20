@@ -10,7 +10,7 @@ namespace TitansCarRental
 {
     public partial class Customers : Form
     {
-        public List<Customer> allmycustomers = new List<Customer>();
+        
 
         public Customers()
         {
@@ -29,13 +29,13 @@ namespace TitansCarRental
             c.Name = txtName.Text;
             c.Email = txtEmail.Text;
             c.Phone = txtPhone.Text;
-            allmycustomers.Add(c);
+            Program.allmycustomers.Add(c);
             RefreshForm();
         }
         private void RefreshForm()
         {
             listBox1.Items.Clear();
-            foreach(Customer c in allmycustomers)
+            foreach(Customer c in Program.allmycustomers)
             {
                 listBox1.Items.Add(c.ID +"      " + c.Name + "      " + c.Email + "     " + c.Phone);
             }
@@ -46,9 +46,9 @@ namespace TitansCarRental
             if (listBox1.SelectedIndex > -1)
             {
                 int Index = listBox1.SelectedIndex;
-                if (allmycustomers!= null && allmycustomers.Count > 0)
+                if (Program.allmycustomers != null && Program.allmycustomers.Count > 0)
                 {
-                    allmycustomers.RemoveAt(Index);
+                    Program.allmycustomers.RemoveAt(Index);
                     RefreshForm();
                 }
                 else

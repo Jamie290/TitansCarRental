@@ -8,12 +8,15 @@ namespace TitansCarRental
 {
     static class Program
     {
+        static public List<Customer> allmycustomers = new List<Customer>();
+        static public List<CVehicle> VehicleList = new List<CVehicle>();
         /// <summary>
         ///  The main entry point for the application.
         /// </summary>
         [STAThread]
         static void Main()
-        {             
+        {         
+            
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
