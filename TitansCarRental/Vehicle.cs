@@ -28,7 +28,19 @@ namespace TitansCarRental
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            if (listBox1.SelectedIndex > -1)
+            {
+                int Index = listBox1.SelectedIndex;
+                if (Program.VehicleList != null && Program.VehicleList.Count > 0)
+                {
+                    Program.VehicleList.RemoveAt(Index);
+                    RefreshForm();
+                }
+                else
+                    MessageBox.Show("Error, VehicleList is empty");
+            }
+            else
+                MessageBox.Show("Please select an item in the list");
         }
 
         private void btnUpdate_Click(object sender, EventArgs e)
@@ -58,8 +70,13 @@ namespace TitansCarRental
             listBox1.Items.Clear();
             foreach (CVehicle v in Program.VehicleList)
             {
-                listBox1.Items.Add(v.ID + "      " + v.Type + "      " + v.Make + "     " + v.Model + "      " + v.Miles + "      " + v.Transmission + "     " + v.Year + "     " + v.Rates + "     " + v.Fuel);
+                listBox1.Items.Add(v.ID + "     Type: " + v.Type + "     Make: " + v.Make + "    Model: " + v.Model + "     Mileage: " + v.Miles + "     Transmission: " + v.Transmission + "    Purchase Year: " + v.Year + "    Rental Rates: " + v.Rates + "    Fuel: " + v.Fuel);
             }
+        }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            listBox1.HorizontalScrollbar = true;
         }
     }
 
